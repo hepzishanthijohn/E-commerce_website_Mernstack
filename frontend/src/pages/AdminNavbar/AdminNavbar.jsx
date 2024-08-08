@@ -2,10 +2,10 @@ import React, {  useContext, useState } from 'react';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AdminNavbar.css';
-import logo from '../../Assets/Admin_Assets/logo3.jpg';
-import cart_icon from '../../Assets/Frontend_Assets/cart_icon.png';
+import logo from '../../assets/Admin_Assets/logo3.jpg';
+import cart_icon from '../../assets/Frontend_Assets/cart_icon.png';
 import { Link } from 'react-router-dom';
-import nav_dropdown from '../../Assets/Frontend_Assets/nav_dropdown.png'
+import nav_dropdown from '../../assets/Frontend_Assets/nav_dropdown.png'
 import { ShopContext } from '../../context/ShopContext';
 
 const Navbar = () => {
