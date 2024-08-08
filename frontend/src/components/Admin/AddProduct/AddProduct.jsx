@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AddProduct.css';
 import axios from 'axios';
-import upload_area from '../../assets/Admin_Assets/upload_area.svg';
+import upload_area from '../../Assets/Admin_Assets/upload_area.svg';
 
 const AddProduct = () => {
   const [title, setTitle] = useState('');
