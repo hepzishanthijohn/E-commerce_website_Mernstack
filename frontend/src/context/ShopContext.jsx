@@ -17,7 +17,7 @@ const ShopContextProvider = (props) => {
 
     useEffect(() => {
         // Fetch all products using Axios
-        axios.get('http://localhost:4000/api/products/getAllProducts')
+        axios.get('https://e-commerce-website-mernstack.onrender.com/api/products/getAllProducts')
             .then((response) => setAll_Product(response.data))
             .catch((error) => console.error('Error fetching all products:', error));
 

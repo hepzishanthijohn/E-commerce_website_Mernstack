@@ -49,7 +49,7 @@ function RegistrationForm() {
                                                 validationSchema={RegistrationSchema}
                                                 onSubmit={(values, { setSubmitting, resetForm }) => {
                                                    
-                                                    axios.post('http://localhost:4000/api/auth/register', values, {
+                                                    axios.post('https://e-commerce-website-mernstack.onrender.com/api/auth/register', values, {
                                                         headers: {
                                                             'Content-Type': 'application/json',
                                                         }

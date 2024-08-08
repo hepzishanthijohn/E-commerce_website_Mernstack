@@ -12,7 +12,7 @@ const ListProduct = () => {
 
     const fetchInfo = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/api/products/getAllProducts');
+            const response = await axios.get('https://e-commerce-website-mernstack.onrender.com/api/products/getAllProducts');
             setAllProducts(response.data); // Assuming response.data is an array of products
         } catch (error) {
             console.error('Error fetching data:', error);
@@ -22,7 +22,7 @@ const ListProduct = () => {
 
     const remove_product = async (id) => {
         try {
-            await axios.post('http://localhost:4000/api/products/removeproduct', { id: id }, {
+            await axios.post('https://e-commerce-website-mernstack.onrender.com/api/products/removeproduct', { id: id }, {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
