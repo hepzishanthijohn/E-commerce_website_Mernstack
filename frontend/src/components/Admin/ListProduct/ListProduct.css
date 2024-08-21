@@ -40,21 +40,40 @@
     overflow-y: auto;
 }
 @media(max-width:800px){
+    .listContainer{
+        z-index: 999;
+    }
     .list-product{
         box-sizing: border-box;
         width: 95%;
         height: 100%;
         padding: 10px 30px;
         margin: 20px auto;
+        background: #000;
+
 
     }
     .listproduct-format-main{
         padding: 15px 0px;
-        color: #454545;
+        color: white;
         font-size: 12px;
     }
     .listproduct-product-icon{
         height: 60px;
 
+    }
+}
+@media(max-width:500px){
+    .listContainer{
+        z-index: 999;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .list-product{
+        background: #000;
+    }
+    .listproduct-format-main{
+        
+        color: white;
     }
 }
