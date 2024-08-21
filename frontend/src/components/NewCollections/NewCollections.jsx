@@ -7,7 +7,7 @@ const NewCollections = () => {
 
  const [new_collection, setNew_collection] = useState([]);
  useEffect(() =>{
-  fetch('https://e-commerce-website-mernstack.onrender.com/api/products/newcollections')
+  fetch('https://e-commerce-website-mernstack-pkyb.vercel.app/api/products/newcollections')
   .then((response) => response.json())
   .then((data) => setNew_collection(data));
  },[])

@@ -8,7 +8,7 @@ const Popular = () => {
 const [popularProducts, setPopularProducts] = useState([]);
    
 useEffect(() => {
-  axios.get('https://e-commerce-website-mernstack.onrender.com/api/products/popularinwomen')
+  axios.get('https://e-commerce-website-mernstack-pkyb.vercel.app/api/products/popularinwomen')
       .then((response) => {
           setPopularProducts(response.data);
       })
